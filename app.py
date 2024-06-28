@@ -1,6 +1,5 @@
 import os
 import json
-import fastapi
 from transformers import pipeline
 
 
