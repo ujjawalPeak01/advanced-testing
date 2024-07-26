@@ -7,10 +7,10 @@ class InferlessPythonModel:
 
     def initialize(self):
         self.generator = pipeline("text-generation", model="EleutherAI/gpt-neo-125M",device=0)
-        # volume_path = os.getenv('VOLUME_PATH')
-        # file_path = os.path.join(volume_path, 'testing.txt')
-        # with open(file_path, 'w') as file:
-        #    file.write('This is testing')
+        volume_path = os.getenv('VOLUME_PATH')
+        file_path = os.path.join(volume_path, 'testing.txt')
+        with open(file_path, 'w') as file:
+            file.write('This is testing')
         
         print("This is Initialize Code", flush=True)
 
